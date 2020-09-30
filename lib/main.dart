@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'addcreditcard.dart';
+import 'myprofile.dart';
 
 void main() => runApp(MaterialApp(
+  debugShowCheckedModeBanner: false,
   home: CreditCardsScreen(),
 ));
 
@@ -9,6 +12,7 @@ class CreditCardsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
@@ -26,7 +30,7 @@ class CreditCardsScreen extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   onPressed: () {
-                    //code for onPressed
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MyProfile()));
                   },
                 ),
                 SizedBox(width: 20.0),
@@ -159,12 +163,12 @@ class CreditCardsScreen extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.blueGrey,
                       letterSpacing: 1.0,
-                      fontSize: 20.0,
+                      fontSize: 10.0,
                     ),
                   ),
                   color: Colors.white,
                   onPressed: () {
-                    //code for onPressed
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>AddCreditCard()));
                   },
                 ),
               ],
@@ -174,4 +178,6 @@ class CreditCardsScreen extends StatelessWidget {
       ),
     );
   }
+
+
 }
