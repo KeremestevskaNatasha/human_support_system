@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:human_support_system/pages/addcreditcard.dart';
+import 'package:human_support_system/pages/new_credit_card.dart';
 
 import 'myprofile.dart';
 
@@ -150,25 +150,35 @@ class CreditCardsScreen extends StatelessWidget {
             ),
             SizedBox(width: 40.0),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                RaisedButton.icon(
-                  icon: Icon(
-                    Icons.add,
-                    color: Colors.blue,
-                  ),
-                  label: Text(
-                    'Add Credit Cards',
-                    style: TextStyle(
-                      color: Colors.blueGrey,
-                      letterSpacing: 1.0,
-                      fontSize: 10.0,
+                Container(
+                  padding: EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                      border: Border(
+                          bottom: BorderSide(
+                              color: Colors.grey[200]))),
+                  child:FlatButton.icon(
+                    icon: Icon(
+                      Icons.add,
+                      color: Colors.blue,
                     ),
+                    label: Text(
+                      'Add Credit Cards',
+                      style: TextStyle(
+                        color: Colors.blueGrey,
+                        letterSpacing: 1.0,
+                        fontSize: 10.0,
+                      ),
+                    ),
+                    color: Colors.white,
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>NewCreditCard())); //Inkwell ?
+                    },
                   ),
-                  color: Colors.white,
-                  onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>AddCreditCard()));
-                  },
+
                 ),
+
               ],
             ),
           ],

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1056235816801",
+    "firebase_url": "https://human-support-system.firebaseio.com",
+    "project_id": "human-support-system",
+    "storage_bucket": "human-support-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056235816801:android:34f90a91ec663d9872e720",
+        "android_client_info": {
+          "package_name": "com.example.human_support_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056235816801-te3n1ofqtq0mjbr6e0vv4tgs3da11vgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkXNdZLzWKRWUzO7CHP_rDt-rXZyfLB9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056235816801-te3n1ofqtq0mjbr6e0vv4tgs3da11vgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
